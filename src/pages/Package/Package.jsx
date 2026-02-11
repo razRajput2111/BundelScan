@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // Hooks
-import useBundleScope from "../../hooks/useBundleScope";
+import useBundleScan from "../../hooks/useBundleScan";
 
 // GraphChart
 import Apexcharts from "../../components/ReactApexChart/Apexcharts";
@@ -11,7 +11,7 @@ const Package = () => {
   const { pathname } = useLocation();
   const [name, setName] = useState("");
   const [version, setVersion] = useState("");
-  const { packageData, loading, error } = useBundleScope({ name, version });
+  const { packageData } = useBundleScan({ name, version });
   const [monthlyDownloads, setMonthlyDownloads] = useState("");
   const [yearlyDownloads, setYearlyDownloads] = useState("");
 
