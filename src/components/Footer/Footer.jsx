@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </section> */}
       <div>
-        Developed by <a href="https://ranjanprasad.in">RanjanPrasad</a>
+        Developed by <a href="https://github.com/razRajput2111">RajRajput</a>
       </div>
     </>
   );

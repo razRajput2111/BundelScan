@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useBundleSearch } from "../../hooks/useBundleSearch";
 // log
-import logo from "../../assets/bundlescope.png";
-const BundleScope = () => {
+import logo from "../../assets/BundleScan.png";
+const BundleScan = () => {
   const [query, setQuery] = useState("");
-  const { data, loading, error } = useBundleSearch(query);
+  const { data, loading } = useBundleSearch(query);
   console.log(data);
   return (
     <>
@@ -19,9 +19,9 @@ const BundleScope = () => {
               <a
                 className="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80 text-amber-50"
                 href="../templates.html"
-                aria-label="BundleScope"
+                aria-label="BundleScan"
               >
-                <img src={logo} alt="BundleScope" className="w-20" />
+                <img src={logo} alt="BundleScan" className="w-20" />
               </a>
               {/* End Logo */}
 
@@ -29,7 +29,7 @@ const BundleScope = () => {
             </div>
 
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
-              Find the Scope of Your Bundle
+              Scan Your NPM Bundles
             </h1>
           </div>
 
@@ -93,7 +93,7 @@ const BundleScope = () => {
 
         <footer className="mt-auto max-w-4xl text-center mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs text-gray-600 dark:text-neutral-500">
-            © 2025 <a href="https://ranjanprasad.in">RanjanDevelop.</a>
+            © 2026  Developed by <a href="https://github.com/razRajput2111">RajRajput</a>
           </p>
         </footer>
       </div>
@@ -108,4 +108,4 @@ const BundleScope = () => {
   );
 };
 
-export default BundleScope;
+export default BundleScan;

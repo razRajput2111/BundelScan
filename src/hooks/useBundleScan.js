@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-// bundlescope
-export default function useBundleScope({ name, version }) {
+// bundlescan API call
+export default function useBundleScan({ name, version }) {
   const [packageData, setPackageData] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -13,8 +13,8 @@ export default function useBundleScope({ name, version }) {
       name
     )}/${encodeURIComponent(packageVersion)}`;
 
-    setLoading(true);
-    setError(null);
+    // setLoading(true);
+    // setError(null);
     // API call for the package data
     fetch(api)
       .then((response) => {

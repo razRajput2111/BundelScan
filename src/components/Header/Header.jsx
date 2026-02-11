@@ -1,4 +1,4 @@
-// import logo from "/src/assets/bundlescope.png";
+
 const Header = () => {
   return (
     <header className="py-4">
